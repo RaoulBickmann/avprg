@@ -4,8 +4,9 @@
 
 class Envelope
 {
+    //Testchanges
 public:
-    enum State{OFF, ON, ATTACK, RELEASE};
+    enum State{OFF, ON, RELEASE, ATTACK, DECAY, SUSTAIN};
     Envelope();
     void setSampleRate(float sampleRate);
     float process(float input);
@@ -13,6 +14,8 @@ public:
     void off();
     void setReleaseSeconds(float seconds);
     void setAttackSeconds(float seconds);
+    void setDecaySeconds(float seconds);
+    void setSustainGainDB(float gain);
 private:
     void setState(State state);
 private:
@@ -20,6 +23,8 @@ private:
     float gain;
     float releaseSeconds;
     float attackSeconds;
+    float decaySeconds;
+    float sustainGainDB;
     State state;
     float gainFactor;
 };

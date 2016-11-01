@@ -20,7 +20,7 @@ void OscillatorSource::setFrequency(float frequency){
     oscillator.setFrequency(frequency);
 }
 void OscillatorSource::setNote(int noteNumber){
-    float frequency = 440.0 * pow(2.0, (noteNumber - 69.0)/12.0);
+    float frequency = 440.0 * pow(2.0, (noteNumber - 49.0)/12.0);
     setFrequency(frequency);
 }
 

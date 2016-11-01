@@ -27,7 +27,7 @@ void MainWindow::initializeAudio(){
     on_gainSlider_valueChanged(ui->gainSlider->value());
 
     audioPlayer.setAudioSource(&oscillatorSource);
-    audioPlayer.start();
+    //audioPlayer.start();
 }
 
 
@@ -52,3 +52,96 @@ void MainWindow::on_gainSlider_valueChanged(int value)
     oscillatorSource.setGain(value);
 }
 
+
+//Buttons pressed
+
+void MainWindow::on_firstC_pressed()
+{
+    oscillatorSource.setNote(40);
+    audioPlayer.start();
+}
+
+
+void MainWindow::on_D_pressed()
+{
+    oscillatorSource.setNote(42);
+    audioPlayer.start();
+}
+
+void MainWindow::on_E_pressed()
+{
+    oscillatorSource.setNote(44);
+    audioPlayer.start();
+}
+
+void MainWindow::on_F_pressed()
+{
+    oscillatorSource.setNote(45);
+    audioPlayer.start();
+}
+
+void MainWindow::on_G_pressed()
+{
+    oscillatorSource.setNote(47);
+    audioPlayer.start();
+}
+
+void MainWindow::on_H_pressed()
+{
+    oscillatorSource.setNote(49);
+    audioPlayer.start();
+}
+
+void MainWindow::on_A_pressed()
+{
+    oscillatorSource.setNote(51);
+    audioPlayer.start();
+}
+
+void MainWindow::on_secondC_pressed()
+{
+    oscillatorSource.setNote(52);
+    audioPlayer.start();
+}
+
+//Buttons released
+
+void MainWindow::on_firstC_released()
+{
+    audioPlayer.stop();
+}
+
+void MainWindow::on_D_released()
+{
+    audioPlayer.stop();
+}
+
+void MainWindow::on_E_released()
+{
+    audioPlayer.stop();
+}
+
+void MainWindow::on_F_released()
+{
+    audioPlayer.stop();
+}
+
+void MainWindow::on_G_released()
+{
+    audioPlayer.stop();
+}
+
+void MainWindow::on_H_released()
+{
+    audioPlayer.stop();
+}
+
+void MainWindow::on_A_released()
+{
+    audioPlayer.stop();
+}
+
+void MainWindow::on_secondC_released()
+{
+    audioPlayer.stop();
+}

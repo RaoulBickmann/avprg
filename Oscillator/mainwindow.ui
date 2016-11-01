@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>430</width>
+    <height>345</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -113,13 +113,89 @@
      <string>Gain:</string>
     </property>
    </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>341</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="firstC">
+         <property name="text">
+          <string>C</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="E">
+         <property name="text">
+          <string>E</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="G">
+         <property name="text">
+          <string>G</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="A">
+         <property name="text">
+          <string>A</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="D">
+         <property name="text">
+          <string>D</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="F">
+         <property name="text">
+          <string>F</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="H">
+         <property name="text">
+          <string>H</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="secondC">
+         <property name="text">
+          <string>C</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>430</width>
      <height>21</height>
     </rect>
    </property>
